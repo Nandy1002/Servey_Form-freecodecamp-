@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg">
+
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div class="form">
+            <form id="survey-form">
+                <section>
+                    <label id="name-label">Name <input required type="text" name="name" id="name"></label>
+                    <label id="email-label">Email <input required type="email" name="email" id="email"></label>
+                    <label id="number-label">Age (optional) <input type="number" name="age" id="age" min="10"
+                            max="120"></label>
+                </section>
+                <section>
+                    <label id="role-label">Which option best describes your current role?
+                        <select name="role" id="dropdown">
+                            <option value="role-default">Select Current Role</option>
+                            <option value="role1">Student</option>
+                            <option value="role2">Full Time Job</option>
+                            <option value="role3">Full Time Learner</option>
+                            <option value="role4">Prefer not to say</option>
+                            <option value="role5">Others</option>
+                        </select>
+                    </label>
+                    <label id="recomendation-label">
+                        Would you recommend freeCodeCamp to a friend?
+                        <input type="radio" name="recomendation" id="recomendation1"> Definitely
+                        <input type="radio" name="recomendation" id="recomendation2"> Maybe
+                        <input type="radio" name="recomendation" id="recomendation3"> Not sure
+                    </label>
+                    <label id="feature-label">What is your favorite feature of freeCodeCamp?
+                        <select name="feature" id="favourite">
+                            <option value="fav-default">Select an option</option>
+                            <option value="fav1">Challenges</option>
+                            <option value="fav2">Projects</option>
+                            <option value="fav3">Community</option>
+                            <option value="fav4">Open Source</option>
+                        </select>
+                    </label>
+                </section>
+                <section>
+
+                </section>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
