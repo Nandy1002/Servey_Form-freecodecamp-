@@ -1,29 +1,44 @@
-
 body{
-    position: absolute;
     margin: 0;
     padding: 0;
     background: url(bg-image.jpg);
-    background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
-.bg{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: blueviolet;
+h1{
+    margin-top:30px;
 }
 h1,p{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
-.form{
-    width: 60%;
-    margin:auto;
-    background-color: burlywood;
-    opacity: 0.7;
-    backdrop-filter: blur(8px);
+#survey-form{
+    font-size: 20px;
+    width: 60vw;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+    padding: 2rem 30px;
+    background-color: black;
+    color: aliceblue;
+    opacity: 0.6;
 }
-label{
+label {
     display: block;
+    margin: 0.5rem 0;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="submit"],select,textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+}
+select{
+    height: 2rem;
+    width: 101%;
+}
+input[type="submit"]{
+    background-color: aquamarine;
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size:large;
+    width: 101%;
 }
